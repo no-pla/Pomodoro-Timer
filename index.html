@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./favicon/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="description-container">
+      <div class="description">
+        <h1>뽀모도로 학습법이란</h1>
+        <div class="desc">
+          '뽀모도로 학습법'은 시간 관리를 극대화하는 방법입니다. 타이머를
+          이용하여 25분간 집중하여 일을 한 다음, 5분간 휴식하는 방법입니다.
+        </div>
+        <h2>방법</h2>
+        <div class="desc">
+          뽀모도로 학습법 5단계:<br />
+          1. 수행할 작업을 선택한다.<br />
+          2. 뽀모도로(타이머)를 25분으로 설정한다.<br />
+          3. 뽀모로로가 울릴 때까지 수행한 다음, 종이에 체크 표시를 한다.<br />
+          4. 짧은 휴식(5분)을 취한다.<br />
+          5. 뽀모도로를 네 번 반복할 때마다 긴 휴식(30분)을 취한다.
+        </div>
+        <br />
+        <p>
+          참고 자료:
+          <a
+            href="https://web.archive.org/web/20100924153854/http://www.pomodorotechnique.com/index.html
+              "
+          >
+            뽀모도로 공식 사이트
+          </a>
+        </p>
+        <button class="hidden-btn">x</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="clock-container">
+        <div class="clock">
+          <span class="time"></span>
+          <button class="start-pomo">공부 시작하기</button>
+          <button class="start-break">휴식 시작하기</button>
+          <span class="study-status"></span>
+          <div class="pomo"></div>
+        </div>
+      </div>
+    </div>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>

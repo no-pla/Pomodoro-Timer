@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.description-container {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  background-color: whitesmoke;
+  height: 60%;
+  width: 500px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.description > h1,
+.description > h2 {
+  margin-top: 20px;
+}
+
+.desc {
+  margin: 10px 0;
+}
+
+body {
+  font-family: "Sunflower", sans-serif;
+}
+
+.clock-container {
+  /* border: 1px solid gray; */
+  width: 50%;
+  height: 100vh;
+  width: 100vw;
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  border-radius: 5px;
+  width: 300px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(256, 256, 256, 0.4);
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.clock > span.time {
+  margin: 0 auto;
+  font-size: 80px;
+}
+
+.study-status {
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.clock > button {
+  background-color: whitesmoke;
+  width: 70%;
+  height: 30px;
+  font-size: 15px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-btn {
+  background-color: tomato;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.animated {
+  transition-property: background-color;
+  transition-duration: 1s;
+}
