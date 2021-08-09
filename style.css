@@ -101,3 +101,9 @@ body {
   transition-property: background-color;
   transition-duration: 1s;
 }
+
+a,
+a:link,
+a:visited {
+  color: #000;
+}

@@ -2,8 +2,8 @@ const timer = document.querySelector(".time");
 const status = document.querySelector(".study-status");
 const startPomoBtn = document.querySelector(".start-pomo");
 const startBreakBtn = document.querySelector(".start-break");
+
 const pomoCount = document.querySelector(".pomo");
-const hiddenBtn = document.querySelector(".hidden-btn");
 const mainPomo = document.querySelector(".container");
 const container = document.querySelector(".clock-container");
 
@@ -23,7 +23,7 @@ function hiddenDesc() {
 }
 
 function startPomo() {
-  $time = 5;
+  $time = 1500;
   container.classList.add("animated");
 
   if (pomoCount.innerText.length / 2 === 4) {
@@ -68,10 +68,10 @@ function breakPomo() {
   pomoCount.innerHTML += "🍅";
 
   if (pomoCount.innerText.length / 2 !== 4) {
-    rest = 3;
+    rest = 300;
     startBreakInterval = setInterval(startBreak, 1000);
   } else {
-    rest = 18;
+    rest = 1800;
     startBreakInterval = setInterval(startBreak, 1000);
   }
 }
@@ -94,13 +94,14 @@ function startBreak() {
     startPomoBtn.classList.remove("hidden");
     startBreakBtn.classList.add("hidden");
     startBreakBtn.disabled = false;
-    //    container.style.backgroundColor = "tomato";
     timer.innerHTML = "25:00";
     status.innerText = "공부 시간! 📚";
   }
 }
 
 function init() {
+  const hiddenBtn = document.querySelector(".hidden-btn");
+
   timer.innerHTML = "25:00";
   status.innerText = "POMODORO TIMER";
   startBreakBtn.classList.add("hidden");
